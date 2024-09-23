@@ -53,10 +53,9 @@ fn sink_aws() {
         .unwrap();
 }
 
-fn example_dataframe() -> DataFrame {
+fn example_dataframe(google) -> DataFrame {
     df!(
         "foo" => &[1, 2, 3],
         "bar" => &[None, Some("bak"), Some("baz")],
     )
-    .unwrap()
-}
+    .unwrap()}
